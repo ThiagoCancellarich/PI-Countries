@@ -1,0 +1,18 @@
+body.home{
+    width: 100%;
+    height: 100%vh;
+    display: flex;
+    font-family: 'Times New Roman';
+    font-size:x-large;
+    background-image: url("https://hips.hearstapps.com/hmg-prod/images/gettyimages-1142945508.jpg?crop=1.00xw:1.00xh;0,0&resize=2048:*");
+    background-size: 100%;
+}
+  /* Increase button size */
+  .enter-button {
+    padding: 20px 40px; /* Adjust padding to make the button larger */
+    font-size: 1.5em; /* Increase font size */
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
