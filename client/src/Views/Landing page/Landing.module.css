@@ -6,13 +6,31 @@ body{
     font-size:x-large;
     background-image: url("https://images.pexels.com/photos/414916/pexels-photo-414916.jpeg");
     background-size: 100%;
+    background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
   /* Increase button size */
-  .enter-button {
-    padding: 20px 40px; /* Adjust padding to make the button larger */
-    font-size: 1.5em; /* Increase font size */
-    background-color: #007BFF;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-  }
+  .enterButton {
+    
+      background-color: #161616eb; 
+      color: #fff; 
+      border: none; 
+      padding: 8px 16px; 
+      border-radius: 4px; 
+      cursor: pointer;
+      border-radius: 12px;
+      font-size:50px;
+    }
+    
+    
+    .enterButton:hover {
+      background-color: #0056b3; 
+    }
+  
+    .title {
+      font-size: 150px;
+      color: #000000f8; 
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }

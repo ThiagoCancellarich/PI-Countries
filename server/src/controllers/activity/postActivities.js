@@ -7,8 +7,9 @@ const postActivitiesHandler = async (req, res) => {
 
         if( !name || !duration || !difficulty || !season || !countries) throw new Error('Insufficient parameters')
     // Crea la actividad turistica en la base de datos
-        const newActivity = await Activity.create({name, duration, difficulty, season, countries})
+        const newActivity = await Activity.create({name, duration, difficulty, season})
     // Relaciona la actividad con los paises indicados
+    
         await newActivity.addCountries(countries)
 
 // Obtener la actividad con la relacion a los paises asociados
@@ -25,6 +26,7 @@ const postActivitiesHandler = async (req, res) => {
         res.status(200).json(activityCountry)
     } catch (error) {
         res.status(404).json({ error: error.message})
+        
         
     }
 }

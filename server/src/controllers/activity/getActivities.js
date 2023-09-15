@@ -3,7 +3,7 @@ const { Activity, Country } = require('../../db');
 
 const getActivitiesHandler = async (req, res) => {
     try {
-        // console.log('estoy ahi');
+        
         const activity = await Activity.findAll({
             include: [
                 {

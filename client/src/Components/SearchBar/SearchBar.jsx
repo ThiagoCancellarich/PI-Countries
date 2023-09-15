@@ -1,11 +1,14 @@
+import { useState } from 'react';
+import style from './searchBar.module.css';
 
+const SearchBar = ({handleChange, handleSearch }) => {
 
-const SearchBar = () => {
+    
     return (
         <div>
-            <h1>SearchBar</h1>
-            <input type="search" />
-            <button>Search</button>
+            
+            <input className={style.searchInput} type="search" onChange={handleChange}/>
+            <button className={style.searchButton} onClick={handleSearch}>Search</button>
 
 
         </div>
