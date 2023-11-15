@@ -1,6 +1,6 @@
 import React from 'react';
 import SearchBar from '../../Components/SearchBar/SearchBar';
-import style from './home.module.css';
+import style from './Home.module.css';
 import { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { getActivities, getByName, getCountries } from '../../Redux/actions';
